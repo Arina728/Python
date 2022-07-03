@@ -1,20 +1,8 @@
-a = None            # отсутствие данных
-print(type(a))
-a = 1               # целое число
-print(type(a))
-a = 1.0             # число с плавающей точкой
-print(type(a))
-a = 1 + 1j          # комплексное число
-print(type(a))
-a = '1'             # строка 
-print(type(a))
-a = [1, 1, 'a']     # список
-print(type(a))
-a = (1, 1, 'a')     # картеж
-print(type(a))
-a = {1, 2, 'a'}     # множество
-print(type(a))
-a = {'a':1, 'b':2}  # словарь
-print(type(a))
-a = True            # булевое значение
-print(type(a))
+x = input('5 + ')  #input место для введения
+y = float(x) + 5   #int переводит строку в число;float - в число с плавающей точкой
+print(y)
+
+a = float(input('Введите число '))
+b = float(input('Введите число '))
+c = a + b
+print('Результат: ' + str(c)) #str переводит число в строку
