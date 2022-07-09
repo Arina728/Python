@@ -1,16 +1,8 @@
-import os    #модуль os обеспечивает взаимодействие с операционной системой
+import os
+import time
 
-sayt = input()
+os.system('start https://www.youtube.com')
 
-if 'https://' in sayt:          #оператор in - если заданные данные присутствуют в sayt, действие выполняется  
-    os.system('start ' + sayt)  #метод system
-    print('if')
-elif 'www.' in sayt:
-    sayt = 'https://' + sayt
-    os.system('start ' + sayt)
-    print('elif')
-else:
-    sayt = 'https://www.' + sayt
-    os.system('start ' + sayt)
-    print('else')
+time.sleep(5)       #sleep останавливает программу на заданное кол-во секунд
 
+os.startfile('C:/Users/torri/Desktop/Py')  #startfile открывает указанный файл
