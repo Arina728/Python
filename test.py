@@ -1,16 +1,16 @@
-x = 'a'
+import os    #модуль os обеспечивает взаимодействие с операционной системой
 
-if x == 0:
-    x = 1
-    print('x был равен нулю')
+sayt = input()
 
-elif type(x) == type(5) or type(x) == type(5.5):
-    print('x допустимое значение')
-
+if 'https://' in sayt:          #оператор in - если заданные данные присутствуют в sayt, действие выполняется  
+    os.system('start ' + sayt)  #метод system
+    print('if')
+elif 'www.' in sayt:
+    sayt = 'https://' + sayt
+    os.system('start ' + sayt)
+    print('elif')
 else:
-    print('В x недопустимый тип данных')
-    x = 1
+    sayt = 'https://www.' + sayt
+    os.system('start ' + sayt)
+    print('else')
 
-
-
-print(100/x)
